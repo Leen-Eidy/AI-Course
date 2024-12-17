@@ -1,0 +1,350 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+
+}
+body{ 
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color:aliceblue;
+    line-height: 1.8; 
+    text-decoration: none;
+    
+}
+nav{ 
+    background-color: rgb(3, 74, 121);
+
+}
+.logo {
+    display: block; /* Ensure the logo is visible */
+    width: 50px; /* Adjust to desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav ul { 
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li { 
+    height: 50px;
+}
+nav a{ 
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:white; 
+    position: relative; 
+    transition: color 0.3s ease, transform 0.3s ease; /* Added smooth transitions */
+}
+
+
+/* Hover effect - New color */
+nav a:hover {
+    color: #00bcd4; 
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+nav li:first-child{ 
+    margin-right:auto;
+}
+.sidebar{ 
+    position: fixed;
+    top:0;
+    right:0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 999; 
+    background-color: black;
+    box-shadow: -10px 0 10px white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{ 
+    width:100%; 
+}
+.sidebar a{ 
+    width:100%; 
+}
+.menu-button{ 
+    display:none;
+ }
+@media(max-width:800px){ 
+    .hideOnMobile{
+        display: none;
+     }
+     .menu-button{ 
+        display:block;
+     }
+}
+@media(max-width:400px){ 
+    .sidebar{
+        width:100%;
+     }
+}
+
+/* Container Style */
+.container {
+    width: 80%;
+    margin: 5em auto; /* Centering container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.left-side, .right-side {
+    flex: 1;
+}
+
+/* Address, Phone, and Email Section */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-side .address-details, 
+.left-side .phone-details, 
+.left-side .email-details {
+    display: flex;
+    flex-direction: row; /* Align items in a single row */
+    align-items: center; /* Vertically center items */
+    gap: 15px; /* Consistent spacing between icon and text */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word; /* Prevent long text from overflowing */
+}
+
+.left-side .text-one, 
+.left-side .text-two {
+    font-size: 1rem;
+    color: #555;
+    display: inline-block; /* Ensure inline behavior for consistent spacing */
+}
+
+.left-side .text-one a, 
+.left-side .text-two a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.left-side .text-one a:hover,
+.left-side .text-two a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the icon and text are properly aligned */
+.left-side i {
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+
+/* Right Side Section (Form) */
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.right-side p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box, .input-box-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input, .input-box-message textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-box input:focus, .input-box-message textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.input-box-message textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Button Styling */
+.button input {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .left-side .address-details, 
+    .left-side .phone-details, 
+    .left-side .email-details {
+        flex-direction: column;
+    }
+
+    .right-side .topic-text {
+        font-size: 1.4rem;
+    }
+
+    .right-side p {
+        font-size: 1rem;
+    }
+
+    .button input {
+        font-size: 1rem;
+    }
+}
+footer {
+    background: radial-gradient(circle, #000000, #000033, #000066, #004080, #001a33);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Ensures footer moves to the bottom */
+    text-decoration: none;
+}
+
+.foo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    margin: 10px;
+    flex: 1; /* Allows flexible resizing for responsive design */
+    min-width: 200px; /* Prevents collapsing */
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+    color: aqua;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: aqua;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 5px 0;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-links ul li {
+    list-style: none;
+}
+
+.social-links ul li a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-links ul li a:hover {
+    color: aqua;
+}
+
+.bottom-bar {
+    margin-bottom: 0;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.bottom-bar p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for 800px */
+@media (max-width: 800px) {
+    .foo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .social-links ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

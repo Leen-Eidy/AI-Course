@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI-Course</title>
+        <meta name="description" content="artificial intelligance webiste from zero to hero.">
+        <meta name="author" content="Leen Eidy">
+        <link rel="stylesheet" href="../styles/course.css"> 
+        <script src="../scripts/sidebar.js" defer></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    <body> 
+        <nav> 
+            <ul class="sidebar"> 
+                <li>
+                    <a onclick="hidesidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../pages/roadmap.html">Roadmap</a></li>
+                <li><a href="../pages/course.html">Course</a></li>
+                <li><a href="../pages/lecture.html">Lecture</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+                <li><a href="../pages/reg.html">Registration</a></li>
+            </ul>
+            <ul> 
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/Logo.svg" alt="Logo" class="logo">
+                    </a>
+                </li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="../pages/roadmap.html">Roadmap</a></li>
+                <li class="hideOnMobile"><a href="../pages/course.html">Course</a></li>
+                <li class="hideOnMobile"><a href="../pages/lecture.html">Lecture</a></li>
+                <li class="hideOnMobile"><a href="../pages/contact.html">Contact Us</a></li>
+                <li class="hideOnMobile"><a href="../pages/reg.html">Registration</a></li>
+                <li class="menu-button" onclick="showsidebar()"> 
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Artificial Intelligence (AI) Course</h1>
+        <h2>Module 1: Introduction to AI and Machine Learning</h2>
+        <p><strong>What is AI?</strong></p>
+    <p>Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction. AI can be broadly classified into two categories:</p>
+    <ul>
+        <li><strong>Narrow AI</strong>: AI systems designed to handle a specific task (e.g., Siri, recommendation systems).</li>
+        <li><strong>General AI</strong>: Theoretical AI that would perform any intellectual task that a human can.</li>
+    </ul>
+    <p>AI is used across many industries, from self-driving cars to healthcare, finance, and customer service.</p>
+    <p><strong>Key Concepts</strong></p>
+    <ul>
+        <li>Algorithms: A set of instructions that help machines solve problems and make decisions.</li>
+        <li>Models: A mathematical representation of a process that AI uses to learn patterns.</li>
+        <li>Supervised Learning: The machine is trained with input-output pairs, where the correct output is provided.</li>
+        <li>Unsupervised Learning: The machine identifies patterns without any labeled output data.</li>
+        <li>Reinforcement Learning: A machine learns by interacting with its environment and receiving feedback (rewards or penalties).</li>
+    </ul>
+    <p><em>Assignment: Write a simple AI program to automate a basic task (e.g., a rule-based system that decides actions based on specific conditions).</em></p>
+
+    <h2>Module 2: Programming Foundations for AI</h2>
+    <p><strong>Python for AI</strong></p>
+    <p>Python is the most popular programming language for AI due to its simplicity and the powerful libraries it offers, such as NumPy, Pandas, and Matplotlib.<br> In this module, we’ll cover basic Python programming concepts:</p>
+    <ul>
+        <li>Variables, data types, functions</li>
+        <li>Control flow (if-else statements, loops)</li>
+        <li>Working with lists, dictionaries, and other data structures</li>
+    </ul>
+    <p><strong>Data Structures and Algorithms</strong></p>
+    <p>Understanding data structures is crucial in AI. You’ll work with:</p>
+    <ul>
+        <li>Arrays and Lists for organizing data</li>
+        <li>Dictionaries for mapping relationships between keys and values</li>
+        <li>Basic algorithms for searching, sorting, and manipulating data (e.g., bubble sort, binary search)</li>
+    </ul>
+    <p><em>Assignment: Write Python code to manipulate and analyze a given dataset. Use libraries like Pandas for data handling and Matplotlib for visualization.</em></p>
+
+    <h2>Module 3: Data Science and Data Preprocessing</h2>
+    <p><strong>Understanding Data</strong></p>
+    <p>Data is at the core of AI. The quality and quantity of data you use directly affect the performance of AI models. AI deals with two types of data:</p>
+    <ul>
+        <li><strong>Structured data</strong>: Data that is organized in rows and columns (e.g., CSV files, SQL databases).</li>
+        <li><strong>Unstructured data</strong>: Data that does not have a pre-defined structure (e.g., images, text).</li>
+    </ul>
+    <p><strong>Exploratory Data Analysis (EDA)</strong></p>
+    <p>Before building a model, data needs to be understood:</p>
+    <ul>
+        <li>Use visualizations like histograms, scatter plots, and box plots to detect trends and anomalies.</li>
+        <li>Feature engineering: Modify raw data to make it suitable for machine learning.</li>
+        <li>Feature scaling: Normalize or standardize data for better model performance.</li>
+    </ul>
+    <p><em>Assignment: Use Pandas to clean a dataset (e.g., removing missing values or outliers) and use Matplotlib to visualize important data trends.</em></p>
+
+   
+    <h2>Module 4: Capstone Project</h2>
+    <div class="project">
+        <p><strong>Real-World Application</strong></p>
+        <p>For the final project, students will select a real-world problem and apply AI to solve it. Examples include:</p>
+        <ul>
+            <li>Building a recommendation system.</li>
+            <li>Creating a chatbot using NLP.</li>
+            <li>Developing an AI-based image classifier.</li>
+        </ul>
+        <p><strong>Deliverables:</strong></p>
+        <ul>
+            <li>Complete project code and documentation.</li>
+            <li>A final presentation of the project, explaining the problem, solution, and results.</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <div class="foo">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>
+                    <a href="mailto:79144150leenh2@gmail.com">Email:79144150leenh2@gmail.com</a>
+                </p>
+                <p>
+                    Call us at: <a href="tel:+96101111000">+961 01 111 000</a>
+                </p>
+                <p>Address: Beirut, Lebanon</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/roadmap.html">Roadmap</a></li>
+                    <li><a href="../pages/course.html">Course</a></li>
+                    <li><a href="../pages/lecture.html">Lecture</a></li>
+                    <li><a href="../pages/contact.html">Contact Us</a></li>
+                    <li><a href="../pages/reg.html">Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-content social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https:www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https:www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/leen-eidy"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Artificial Intelligence. All rights reserved.</p>
+        </div>
+    </footer>
+    </body>
+</html>
